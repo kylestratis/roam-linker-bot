@@ -10,3 +10,6 @@ or set environment variables directly with your provider. Keys:
 
 ## Installation
 This project uses [Poetry](https://python-poetry.org/) to manage dependencies. Once you have it installed, running `poetry install` in the project's root will install all dependencies and set up a virtual environment for testing.
+
+## Limitations
+This doesn't currently check for the existence of the blockref it is provided, nor is it able to resolve pagelinks.
