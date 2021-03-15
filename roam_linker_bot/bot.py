@@ -23,7 +23,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    blockrefs = re.findall(r"\(\((\w+?)\)\)", message.content)
+    blockrefs = re.findall(r"\(\(([\w-]+?)\)\)", message.content)
     for blockref in blockrefs:
         url = f"https://roamresearch.com#/app/{ROAM_WORKSPACE}/page/{blockref}"
         await message.channel.send(url)
